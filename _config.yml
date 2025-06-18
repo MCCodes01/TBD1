@@ -1,0 +1,36 @@
+# GitHub Pages Configuration for Tutorial Widget MVP Presentation
+# This ensures Jekyll doesn't interfere with our static HTML presentation
+
+# Disable Jekyll processing since we're using pure HTML
+plugins: []
+markdown: kramdown
+
+# Site information
+title: "Tutorial Widget MVP - Team Briefing"
+description: "AI-Powered Tutorial Widget for IT Service Desk - Team Preparation Presentation"
+author: "IT Innovation Team"
+
+# GitHub Pages settings
+github:
+  repository_name: tutorial-widget-mvp
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - .github/
+
+# Include all HTML files
+include:
+  - index.html
+
+# Disable automatic site generation
+safe: true
+incremental: false
+
+# Ensure static files are served correctly
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null
